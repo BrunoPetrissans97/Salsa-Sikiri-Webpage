@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sabores y Maridaje | Salsa Sikiri</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+    <div id="header-placeholder"></div>
+    <script>
+      fetch("header.html")
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById("header-placeholder").innerHTML = data;
+        });
+    </script> 
+    <section id="productos" class="section">
+        <h2>Nuestros Productos</h2>
+        <div class="product-gallery">
+            <div class="product-card">
+                <img src="./img/Salsa_260_Original_Individual.png" alt="Salsa Original">
+                <h3>Original</h3>
+                <p>Mezcla perfecta de chile de árbol y guajillo.</p>
+            </div>
+            <div class="product-card">
+                <img src="./img/Salsa_260_Cacahuate_Individual.png" alt="Salsa de Cacahuate">
+                <h3>Cacahuate</h3>
+                <p>Un toque crujiente para tus platillos favoritos.</p>
+            </div>
+            <div class="product-card">
+                <img src="./img/Salsa_260_Arandano_Individual.png" alt="Salsa de Arándano">
+                <h3>Arándano</h3>
+                <p>Perfecta para maridar con cocina asiática.</p>
+            </div>
+            <div class="product-card">
+            <img src="./img/Salsa_260_Morita_Individual.png" alt="Salsa de Morita">
+            <h3>Morita - Cascabel</h3>
+            <p>Especial para acompañar con platillos con un poco de sabor achipotlado.</p>
+        </div>
+        </div>
+    </section>
+
+    <main class="section">
+        <h2>Sabores y Maridaje</h2>
+        <p>Contenido de la sección Sabores y Maridaje próximamente.</p>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2025 Salsa Sikiri | Sabor Artesanal</p>
+    </footer>
+</body>
+</html>
