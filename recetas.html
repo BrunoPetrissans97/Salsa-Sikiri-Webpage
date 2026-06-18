@@ -1,27 +1,163 @@
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Historia | Salsa Sikiri</title>
+    <title>Recetas | Salsa Sikiri</title>
+    <meta name="description" content="Recetas fáciles con Salsa Sikiri: brie horneado con chabacano y frutos secos, pizza con macha de cacahuate y kung pao con arándano. Inspiración para tu cocina.">
+    <meta name="theme-color" content="#b20d04">
+    <link rel="icon" href="./img/Salsa-Sikiri-Sin-Fondo.png">
+
+    <meta property="og:title" content="Recetas | Salsa Sikiri">
+    <meta property="og:description" content="Ideas deliciosas para sacarle todo el provecho a tu Salsa Sikiri.">
+    <meta property="og:image" content="https://www.salsasikiri.com/img/Breakfast_with_sikiri.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;0,9..144,900;1,9..144,400&family=Nunito+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="css/estilos.css">
     <script src="js/script.js" defer></script>
 </head>
 <body>
-    <div id="header-placeholder"></div>
-    <script>
-      fetch("header.html")
-        .then(response => response.text())
-        .then(data => {
-          document.getElementById("header-placeholder").innerHTML = data;
-        });
-    </script> 
-    <main class="section">
-        <h2>Recetas</h2>
-        </main>
-    <footer class="footer">
-        <p>&copy; 2025 Salsa Sikiri | Sabor Artesanal</p>
-    </footer>
+    <div id="site-header"></div>
+
+    <!-- ============ PAGE HERO ============ -->
+    <section class="page-hero">
+        <div class="container">
+            <span class="eyebrow" style="color:#ffd9a0;">Inspiración en la cocina</span>
+            <h1>Recetas con Sikiri</h1>
+            <p>Más que un acompañante: un ingrediente. Aquí algunas ideas para enamorarte de cada sabor.</p>
+        </div>
+    </section>
+
+    <!-- ============ RECETAS ============ -->
+    <section class="section section--cream">
+        <div class="container">
+            <div class="recipe-grid">
+
+                <!-- Receta 1 -->
+                <article class="recipe-card" data-aos="fade-up">
+                    <div class="recipe-media">
+                        <!-- TODO: foto del platillo. Drive: Marketing/Recetas -->
+                        <div class="img-placeholder" style="height:200px;">
+                            <span class="ph-emoji">🧀</span>
+                            <span>Próximamente</span>
+                        </div>
+                    </div>
+                    <div class="recipe-body">
+                        <span class="recipe-chip">Con Frutos Secos</span>
+                        <h3>Brie horneado con chabacano</h3>
+                        <div class="recipe-meta">
+                            <span>⏱️ 15 min</span>
+                            <span>🍽️ 4–6 porciones</span>
+                            <span>🔥 Fácil</span>
+                        </div>
+                        <p>El entrante perfecto: queso brie fundido coronado con mermelada de chabacano y nuestra macha de frutos secos.</p>
+                        <h4>Ingredientes</h4>
+                        <ul>
+                            <li>1 pieza de queso brie</li>
+                            <li>2 cucharadas de mermelada de chabacano</li>
+                            <li>2–3 cucharadas de Salsa Sikiri Frutos Secos</li>
+                            <li>Pan tostado o galletas para acompañar</li>
+                        </ul>
+                        <h4>Preparación</h4>
+                        <ol>
+                            <li>Coloca el brie en un refractario y unta encima la mermelada de chabacano.</li>
+                            <li>Agrega la Salsa Sikiri Frutos Secos sobre la mermelada.</li>
+                            <li>Deja reposar unos minutos para que se integren los sabores.</li>
+                            <li>Hornea (o calienta) hasta que el queso esté fundido. Sirve tibio con pan.</li>
+                        </ol>
+                    </div>
+                </article>
+
+                <!-- Receta 2 -->
+                <article class="recipe-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="recipe-media">
+                        <!-- TODO: foto del platillo. Drive: Pizza_Sikiri_cacahuate.png -->
+                        <div class="img-placeholder" style="height:200px;">
+                            <span class="ph-emoji">🍕</span>
+                            <span>Próximamente</span>
+                        </div>
+                    </div>
+                    <div class="recipe-body">
+                        <span class="recipe-chip">Con Cacahuate</span>
+                        <h3>Pizza Sikiri picosita</h3>
+                        <div class="recipe-meta">
+                            <span>⏱️ 20 min</span>
+                            <span>🍽️ 2–4 porciones</span>
+                            <span>🔥 Fácil</span>
+                        </div>
+                        <p>Tu pizza favorita sube de nivel con el toque crujiente y picante de la macha de cacahuate.</p>
+                        <h4>Ingredientes</h4>
+                        <ul>
+                            <li>1 pizza (de tu sabor favorito)</li>
+                            <li>Salsa Sikiri Cacahuate al gusto</li>
+                            <li>Opcional: hojas de albahaca fresca</li>
+                        </ul>
+                        <h4>Preparación</h4>
+                        <ol>
+                            <li>Hornea o calienta tu pizza como de costumbre.</li>
+                            <li>Al salir del horno, distribuye cucharaditas de Salsa Sikiri Cacahuate por encima.</li>
+                            <li>Decora con albahaca y disfruta ese contraste crujiente.</li>
+                        </ol>
+                    </div>
+                </article>
+
+                <!-- Receta 3 -->
+                <article class="recipe-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="recipe-media">
+                        <!-- TODO: foto del platillo. Drive: Kung_Pao_Chicken_Sikiri_arandano.png -->
+                        <div class="img-placeholder" style="height:200px;">
+                            <span class="ph-emoji">🥢</span>
+                            <span>Próximamente</span>
+                        </div>
+                    </div>
+                    <div class="recipe-body">
+                        <span class="recipe-chip">Con Arándano</span>
+                        <h3>Pollo Kung Pao con Sikiri</h3>
+                        <div class="recipe-meta">
+                            <span>⏱️ 30 min</span>
+                            <span>🍽️ 4 porciones</span>
+                            <span>🔥 Medio</span>
+                        </div>
+                        <p>La cocina asiática se lleva de maravilla con el dulce-picante de nuestra macha de arándano.</p>
+                        <h4>Ingredientes</h4>
+                        <ul>
+                            <li>500 g de pechuga de pollo en cubos</li>
+                            <li>Verduras al gusto (pimiento, cebolla, cacahuate)</li>
+                            <li>Salsa de soya y un toque de jengibre</li>
+                            <li>2–3 cucharadas de Salsa Sikiri Arándano</li>
+                        </ul>
+                        <h4>Preparación</h4>
+                        <ol>
+                            <li>Saltea el pollo hasta dorar y reserva.</li>
+                            <li>Sofríe las verduras, regresa el pollo y agrega soya y jengibre.</li>
+                            <li>Incorpora la Salsa Sikiri Arándano y saltea 2 minutos más.</li>
+                            <li>Sirve sobre arroz blanco y disfruta.</li>
+                        </ol>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ CTA ============ -->
+    <section class="section section--red cta-band">
+        <div class="container">
+            <h2>¿Tienes una receta con Sikiri?</h2>
+            <p>Compártela con nosotros en Instagram y etiquétanos. ¡Podrías aparecer aquí!</p>
+            <div class="hero-cta">
+                <a href="https://www.instagram.com/salsa_sikiri/" target="_blank" rel="noopener" class="btn btn-light">Síguenos en Instagram</a>
+                <a href="https://wa.me/5215510112861?text=¡Hola%20Salsa%20Sikiri!%20Quiero%20pedir%20salsa%20para%20cocinar." target="_blank" rel="noopener" class="btn btn-wa">Pídela por WhatsApp</a>
+            </div>
+        </div>
+    </section>
+
+    <div id="site-footer"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
 </body>
 </html>

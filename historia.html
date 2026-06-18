@@ -1,27 +1,142 @@
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Historia | Salsa Sikiri</title>
+    <title>Nuestra Historia | Salsa Sikiri</title>
+    <meta name="description" content="La historia de Salsa Sikiri: una receta nacida hace más de 30 años en una cocina mexicana, del chiltepín al chile de árbol. Sikiri significa 'rojo' en lengua Yaqui.">
+    <meta name="theme-color" content="#b20d04">
+    <link rel="icon" href="./img/Salsa-Sikiri-Sin-Fondo.png">
+
+    <meta property="og:title" content="Nuestra Historia | Salsa Sikiri">
+    <meta property="og:description" content="Más de 30 años de tradición. Una salsa que no nació en una fábrica, sino en una cocina.">
+    <meta property="og:image" content="https://www.salsasikiri.com/img/Breakfast_with_sikiri.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;0,9..144,900;1,9..144,400&family=Nunito+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="css/estilos.css">
     <script src="js/script.js" defer></script>
 </head>
 <body>
-    <div id="header-placeholder"></div>
-    <script>
-      fetch("header.html")
-        .then(response => response.text())
-        .then(data => {
-          document.getElementById("header-placeholder").innerHTML = data;
-        });
-    </script> 
-    <main class="section">
-        <h2>Historia</h2>
-        </main>
-    <footer class="footer">
-        <p>&copy; 2025 Salsa Sikiri | Sabor Artesanal</p>
-    </footer>
+    <div id="site-header"></div>
+
+    <!-- ============ PAGE HERO ============ -->
+    <section class="page-hero">
+        <div class="container">
+            <span class="eyebrow" style="color:#ffd9a0;">Nuestra historia</span>
+            <h1>El sabor que nació del campo</h1>
+            <p>Y se perfeccionó por más de tres décadas.</p>
+        </div>
+    </section>
+
+    <!-- ============ NARRATIVA ============ -->
+    <section class="section section--cream">
+        <div class="container">
+            <div class="prose">
+                <p class="lead-first" data-aos="fade-up">Hace más de treinta años, en un pequeño pueblo del Estado de México, una mujer sonorense encontró en la tierra fértil y en su amor por la cocina el origen de una tradición. Amante del campo y de los sabores auténticos, comenzó preparando la salsa macha con el chile más representativo de su tierra: el <strong>chiltepín</strong>, pequeño, bravo y de carácter fuerte. Ese sabor intenso le recordaba a su hogar en el norte, y al conservarlo en una salsa logró capturar la esencia de ese gran chile en un frasco.</p>
+
+                <p data-aos="fade-up">Sin embargo, sabía que no todos podían resistir tanto picor. Con el tiempo quiso crear una versión que mantuviera ese sabor auténtico, pero más equilibrado. Así, al sembrar <strong>chile de árbol</strong> en su jardín, el campo le regaló una cosecha abundante. Buscando aprovechar esos frutos, lo combinó con un toque de <strong>guajillo</strong> y otros ingredientes naturales, hasta lograr una mezcla perfecta —ni demasiado picosa ni demasiado suave—, pero siempre intensa, profunda y deliciosa.</p>
+
+                <p data-aos="fade-up">Durante años, esta salsa fue un tesoro familiar. Acompañaba las comidas del día a día y su sabor se volvió parte de la rutina del hogar, tanto como las <strong>pláticas alrededor de la mesa</strong>, esas donde siempre había un frasco al centro para darle vida a cada bocado. Cada frasco se hacía a mano, con ingredientes seleccionados y sin conservadores. Una salsa artesanal mexicana, nacida del amor por cocinar y por compartir.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ SIKIRI SIGNIFICA ROJO ============ -->
+    <section class="section section--red">
+        <div class="container">
+            <div class="story">
+                <div class="story-text" data-aos="fade-right">
+                    <span class="eyebrow" style="color:#ffd9a0;">Hace 7 años</span>
+                    <h2>La tradición tomó un nuevo nombre: Sikiri</h2>
+                    <p>La palabra <em>Sikiri</em> significa <strong>"rojo"</strong> en lengua Yaqui —una comunidad originaria de Sonora— y fue elegida como homenaje a las raíces del norte y al rojo intenso del aceite que encierra toda la esencia de los chiles.</p>
+                    <p>Es como decir <em>Salsa Roja</em>… pero con alma y con historia.</p>
+                </div>
+                <div class="story-media" data-aos="fade-left">
+                    <!-- TODO: foto de la creadora / la cocina. Drive: Marketing/Historia o Photos/Past photos -->
+                    <div class="img-placeholder" style="min-height:300px;background:rgba(255,255,255,.12);border-color:rgba(255,255,255,.5);color:#fff;">
+                        <span class="ph-emoji">📷</span>
+                        <span>Próximamente</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ LÍNEA DE TIEMPO ============ -->
+    <section class="section section--cream">
+        <div class="container">
+            <div class="text-center">
+                <span class="eyebrow">Tres décadas de sabor</span>
+                <h2 class="section-title">Del chiltepín al frasco que cruza fronteras</h2>
+                <div class="divider-chili">🌶️ ⋯ 🌶️ ⋯ 🌶️</div>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item" data-aos="fade-up">
+                    <span class="year">Hace 30+ años</span>
+                    <h3>Nace la receta</h3>
+                    <p>Una mujer sonorense prepara salsa macha con chiltepín por nostalgia de su tierra.</p>
+                </div>
+                <div class="timeline-item" data-aos="fade-up">
+                    <span class="year">El descubrimiento</span>
+                    <h3>El equilibrio perfecto</h3>
+                    <p>Siembra chile de árbol y lo combina con guajillo: nace la receta base que hoy conocemos.</p>
+                </div>
+                <div class="timeline-item" data-aos="fade-up">
+                    <span class="year">Dos décadas</span>
+                    <h3>Un tesoro familiar</h3>
+                    <p>La salsa acompaña las comidas y las pláticas de la familia, hecha a mano en casa.</p>
+                </div>
+                <div class="timeline-item" data-aos="fade-up">
+                    <span class="year">Hace ~7 años</span>
+                    <h3>Nace la marca Sikiri</h3>
+                    <p>La tradición familiar se convierte en marca: <em>Sikiri</em>, "rojo" en lengua Yaqui.</p>
+                </div>
+                <div class="timeline-item" data-aos="fade-up">
+                    <span class="year">Hoy</span>
+                    <h3>5 sabores y creciendo</h3>
+                    <p>Un portafolio consolidado, marca registrada y presencia en tiendas, queserías y pueblos mágicos.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ VALORES ============ -->
+    <section class="section">
+        <div class="container">
+            <div class="text-center">
+                <span class="eyebrow">Nuestra esencia</span>
+                <h2 class="section-title">Lo que Sikiri sí es</h2>
+                <p class="section-intro">Una salsa hecha con el corazón, no en serie.</p>
+            </div>
+            <div class="value-box si" data-aos="fade-up" style="max-width:640px;margin:0 auto;">
+                <ul>
+                    <li>Artesanal, familiar y mexicana</li>
+                    <li>Hecha a mano en la casa donde nació la receta</li>
+                    <li>Sin conservadores, con ingredientes naturales</li>
+                    <li>Un producto con historia y alma</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ CTA ============ -->
+    <section class="section section--beige cta-band">
+        <div class="container">
+            <h2>Más de tres décadas buscando la perfección</h2>
+            <p>Salsa Sikiri: el sabor único que solo el tiempo puede crear. Pruébalo y entenderás por qué.</p>
+            <div class="hero-cta">
+                <a href="productos.html" class="btn btn-red">Ver nuestros sabores</a>
+                <a href="https://wa.me/5215510112861?text=¡Hola%20Salsa%20Sikiri!%20Me%20encantó%20su%20historia,%20quiero%20probar%20la%20salsa." target="_blank" rel="noopener" class="btn btn-wa">Pídela por WhatsApp</a>
+            </div>
+        </div>
+    </section>
+
+    <div id="site-footer"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
 </body>
 </html>

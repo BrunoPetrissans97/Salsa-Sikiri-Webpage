@@ -1,55 +1,204 @@
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sabores y Maridaje | Salsa Sikiri</title>
+    <title>Productos y Sabores | Salsa Sikiri</title>
+    <meta name="description" content="Conoce los 5 sabores de Salsa Sikiri: Original, Cacahuate, Arándano, Morita Cascabel y Frutos Secos. Presentaciones de 70g, 235g, 260g y kit degustación.">
+    <meta name="theme-color" content="#b20d04">
+    <link rel="icon" href="./img/Salsa-Sikiri-Sin-Fondo.png">
+
+    <meta property="og:title" content="Productos y Sabores | Salsa Sikiri">
+    <meta property="og:description" content="5 sabores de salsa macha artesanal. Encuentra tu favorita.">
+    <meta property="og:image" content="https://www.salsasikiri.com/img/Salsa_260_Original_Individual.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;0,9..144,900;1,9..144,400&family=Nunito+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="css/estilos.css">
     <script src="js/script.js" defer></script>
 </head>
 <body>
-    <div id="header-placeholder"></div>
-    <script>
-      fetch("header.html")
-        .then(response => response.text())
-        .then(data => {
-          document.getElementById("header-placeholder").innerHTML = data;
-        });
-    </script> 
-    <section id="productos" class="section">
-        <h2>Nuestros Productos</h2>
-        <div class="product-gallery">
-            <div class="product-card">
-                <img src="./img/Salsa_260_Original_Individual.png" alt="Salsa Original">
-                <h3>Original</h3>
-                <p>Mezcla perfecta de chile de árbol y guajillo.</p>
-            </div>
-            <div class="product-card">
-                <img src="./img/Salsa_260_Cacahuate_Individual.png" alt="Salsa de Cacahuate">
-                <h3>Cacahuate</h3>
-                <p>Un toque crujiente para tus platillos favoritos.</p>
-            </div>
-            <div class="product-card">
-                <img src="./img/Salsa_260_Arandano_Individual.png" alt="Salsa de Arándano">
-                <h3>Arándano</h3>
-                <p>Perfecta para maridar con cocina asiática.</p>
-            </div>
-            <div class="product-card">
-            <img src="./img/Salsa_260_Morita_Individual.png" alt="Salsa de Morita">
-            <h3>Morita - Cascabel</h3>
-            <p>Especial para acompañar con platillos con un poco de sabor achipotlado.</p>
-        </div>
+    <div id="site-header"></div>
+
+    <!-- ============ PAGE HERO ============ -->
+    <section class="page-hero">
+        <div class="container">
+            <span class="eyebrow" style="color:#ffd9a0;">Nuestros productos</span>
+            <h1>Sabores y maridaje</h1>
+            <p>Cinco recetas artesanales para acompañar cada platillo. Toca un sabor y pídelo directo por WhatsApp.</p>
         </div>
     </section>
 
-    <main class="section">
-        <h2>Sabores y Maridaje</h2>
-        <p>Contenido de la sección Sabores y Maridaje próximamente.</p>
-    </main>
+    <!-- ============ SABORES ============ -->
+    <section class="section section--cream">
+        <div class="container">
+            <div class="flavor-grid">
+                <div class="flavor-card" data-aos="fade-up">
+                    <div class="flavor-media"><img src="./img/Salsa_260_Original_Individual.png" alt="Salsa Sikiri Original"></div>
+                    <div class="flavor-body">
+                        <span class="flavor-tag">La receta madre</span>
+                        <h3>Original</h3>
+                        <div class="spice" aria-label="Nivel de picante: 3 de 3" title="Picante 3 de 3">
+                            <span class="flame on">🔥</span><span class="flame on">🔥</span><span class="flame on">🔥</span>
+                            <span class="spice-label">Intenso</span>
+                        </div>
+                        <p>La mezcla perfecta de chile de árbol y guajillo: intensa, profunda y equilibrada. El alma de Sikiri.</p>
+                        <div class="flavor-pairing"><strong>Marida con:</strong> tacos, carnes, guisados y huevos</div>
+                        <a href="https://wa.me/5215510112861?text=¡Hola!%20Me%20interesa%20la%20Salsa%20Sikiri%20Original." target="_blank" rel="noopener" class="btn btn-red">Pedir Original</a>
+                    </div>
+                </div>
+                <div class="flavor-card" data-aos="fade-up" data-aos-delay="80">
+                    <div class="flavor-media"><img src="./img/Salsa_260_Cacahuate_Individual.png" alt="Salsa Sikiri Cacahuate"></div>
+                    <div class="flavor-body">
+                        <span class="flavor-tag">Crujiente</span>
+                        <h3>Cacahuate</h3>
+                        <div class="spice" aria-label="Nivel de picante: 2 de 3" title="Picante 2 de 3">
+                            <span class="flame on">🔥</span><span class="flame on">🔥</span><span class="flame">🔥</span>
+                            <span class="spice-label">Medio</span>
+                        </div>
+                        <p>Nuestra macha con generosos trozos crujientes de cacahuate. Textura y sabor que enganchan.</p>
+                        <div class="flavor-pairing"><strong>Marida con:</strong> carnes, tacos, botanas y pizza</div>
+                        <a href="https://wa.me/5215510112861?text=¡Hola!%20Me%20interesa%20la%20Salsa%20Sikiri%20de%20Cacahuate." target="_blank" rel="noopener" class="btn btn-red">Pedir Cacahuate</a>
+                    </div>
+                </div>
+                <div class="flavor-card" data-aos="fade-up" data-aos-delay="160">
+                    <div class="flavor-media"><img src="./img/Salsa_260_Arandano_Individual.png" alt="Salsa Sikiri Arándano"></div>
+                    <div class="flavor-body">
+                        <span class="flavor-tag">Dulce-picante</span>
+                        <h3>Arándano</h3>
+                        <div class="spice" aria-label="Nivel de picante: 2 de 3" title="Picante 2 de 3">
+                            <span class="flame on">🔥</span><span class="flame on">🔥</span><span class="flame">🔥</span>
+                            <span class="spice-label">Medio</span>
+                        </div>
+                        <p>Macha con arándano: el balance entre lo dulce y lo picante que sorprende en cada bocado.</p>
+                        <div class="flavor-pairing"><strong>Marida con:</strong> quesos, carnes frías y cocina asiática</div>
+                        <a href="https://wa.me/5215510112861?text=¡Hola!%20Me%20interesa%20la%20Salsa%20Sikiri%20de%20Arándano." target="_blank" rel="noopener" class="btn btn-red">Pedir Arándano</a>
+                    </div>
+                </div>
+                <div class="flavor-card" data-aos="fade-up">
+                    <div class="flavor-media"><img src="./img/Salsa_260_Morita_Individual.png" alt="Salsa Sikiri Morita Cascabel"></div>
+                    <div class="flavor-body">
+                        <span class="flavor-tag">Ahumada</span>
+                        <h3>Morita Cascabel</h3>
+                        <div class="spice" aria-label="Nivel de picante: 3 de 3" title="Picante 3 de 3">
+                            <span class="flame on">🔥</span><span class="flame on">🔥</span><span class="flame on">🔥</span>
+                            <span class="spice-label">Intenso</span>
+                        </div>
+                        <p>Chile morita y cascabel para un perfil ahumado y achipotlado lleno de carácter.</p>
+                        <div class="flavor-pairing"><strong>Marida con:</strong> picadillo, mariscos y antojitos</div>
+                        <a href="https://wa.me/5215510112861?text=¡Hola!%20Me%20interesa%20la%20Salsa%20Sikiri%20Morita%20Cascabel." target="_blank" rel="noopener" class="btn btn-red">Pedir Morita</a>
+                    </div>
+                </div>
+                <div class="flavor-card" data-aos="fade-up" data-aos-delay="80">
+                    <!-- TODO: falta foto de Frutos Secos. Drive: Marketing/Photos/Photoshoot/Final photos/All Flavors -->
+                    <div class="flavor-media">
+                        <div class="img-placeholder">
+                            <span class="ph-emoji">🥜</span>
+                            <span>Próximamente</span>
+                        </div>
+                    </div>
+                    <div class="flavor-body">
+                        <span class="flavor-tag gourmet">Línea gourmet ✨</span>
+                        <h3>Frutos Secos</h3>
+                        <!-- Frutos Secos no figura en el diseño "Sabores" de Canva; nivel asumido suave. Ajustar si hace falta. -->
+                        <div class="spice" aria-label="Nivel de picante: 1 de 3" title="Picante 1 de 3">
+                            <span class="flame on">🔥</span><span class="flame">🔥</span><span class="flame">🔥</span>
+                            <span class="spice-label">Suave</span>
+                        </div>
+                        <p>Mezcla de frutos secos y aceite de oliva con un toque macha. Nuestra creación más reciente y la favorita gourmet.</p>
+                        <div class="flavor-pairing"><strong>Marida con:</strong> ensaladas, pizzas, quesos y brie horneado</div>
+                        <a href="https://wa.me/5215510112861?text=¡Hola!%20Me%20interesa%20la%20Salsa%20Sikiri%20de%20Frutos%20Secos." target="_blank" rel="noopener" class="btn btn-red">Pedir Frutos Secos</a>
+                    </div>
+                </div>
+                <div class="flavor-card" data-aos="fade-up" data-aos-delay="160" style="text-align:center;justify-content:center;padding:2rem;">
+                    <div class="flavor-body" style="justify-content:center;">
+                        <div class="feature-icon">🎁</div>
+                        <h3>Kit Degustación</h3>
+                        <p>4 presentaciones de 70 g para descubrir tus sabores favoritos. Ideal para regalar.</p>
+                        <a href="https://wa.me/5215510112861?text=¡Hola!%20Me%20interesa%20el%20Kit%20Degustación%204x70g." target="_blank" rel="noopener" class="btn btn-wa" style="align-self:center;">Pedir Kit</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <footer class="footer">
-        <p>&copy; 2025 Salsa Sikiri | Sabor Artesanal</p>
-    </footer>
+    <!-- ============ PRESENTACIONES Y PRECIOS ============ -->
+    <section class="section">
+        <div class="container">
+            <div class="text-center">
+                <span class="eyebrow">Presentaciones</span>
+                <h2 class="section-title">Elige el tamaño perfecto</h2>
+                <p class="section-intro">Desde el souvenir que viaja contigo hasta el frasco familiar de mayor rotación.</p>
+            </div>
+
+            <div class="features" style="margin-bottom:3rem;">
+                <div class="feature-card" data-aos="fade-up">
+                    <div class="feature-icon">✈️</div>
+                    <h3>70 g</h3>
+                    <p>Cilíndrica. Puerta de entrada y souvenir. ¡Aprobada en equipaje de mano!</p>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="feature-icon">🏡</div>
+                    <h3>235 g</h3>
+                    <p>Cilíndrica. La favorita familiar, de mayor rotación para quienes ya no pueden vivir sin ella.</p>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="feature-icon">💎</div>
+                    <h3>260 g hexagonal</h3>
+                    <p>Premium y de regalo. Disponible en Original y Frutos Secos.</p>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="feature-icon">🎁</div>
+                    <h3>Kit 4×70 g</h3>
+                    <p>Pack degustación para descubrir y regalar. Cuatro sabores en uno.</p>
+                </div>
+            </div>
+
+            <div class="price-table-wrap" data-aos="fade-up">
+                <table class="price-table">
+                    <thead>
+                        <tr><th>Producto</th><th>Presentación</th><th>Precio sugerido</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Salsa macha (todos los sabores)</td><td>70 g</td><td class="precio">$50</td></tr>
+                        <tr><td>Salsa macha (todos los sabores)</td><td>235 g</td><td class="precio">$110</td></tr>
+                        <tr><td>Salsa macha (Original)</td><td>260 g hexagonal</td><td class="precio">$130</td></tr>
+                        <tr><td>Kit degustación</td><td>4 × 70 g</td><td class="precio">$190</td></tr>
+                        <tr><td>Frutos Secos (gourmet)</td><td>70 g</td><td class="precio">$60</td></tr>
+                        <tr><td>Frutos Secos (gourmet)</td><td>260 g hexagonal</td><td class="precio">$175</td></tr>
+                    </tbody>
+                </table>
+            </div>
+            <p class="price-note">* Precios sugeridos al público. Para mayoreo, consignación y precios especiales, escríbenos por WhatsApp.</p>
+        </div>
+    </section>
+
+    <!-- ============ MAYOREO ============ -->
+    <section class="section section--beige">
+        <div class="container">
+            <div class="story">
+                <div class="story-text" data-aos="fade-right">
+                    <span class="eyebrow">¿Tienda, restaurante o distribuidor?</span>
+                    <h2>Vende Salsa Sikiri</h2>
+                    <p>Manejamos esquemas para todo tipo de negocio: pago anticipado con mejor margen, consignación con riesgo compartido y condiciones preferenciales por mayoreo.</p>
+                    <p>Cuéntanos de tu negocio y armamos juntos la mejor propuesta.</p>
+                    <a href="https://wa.me/5215510112861?text=¡Hola%20Salsa%20Sikiri!%20Tengo%20un%20negocio%20y%20quiero%20vender%20su%20salsa." target="_blank" rel="noopener" class="btn btn-wa">Quiero ser distribuidor</a>
+                </div>
+                <div class="story-media" data-aos="fade-left">
+                    <div class="img-placeholder" style="min-height:280px;">
+                        <span class="ph-emoji">🛒</span>
+                        <span>Próximamente</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="site-footer"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
 </body>
 </html>

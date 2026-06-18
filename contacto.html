@@ -1,53 +1,82 @@
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto | Salsa Sikiri</title>
+    <meta name="description" content="Contacta a Salsa Sikiri por WhatsApp, correo o Instagram. ¿Quieres pedir, vender nuestra salsa o tienes dudas? Escríbenos.">
+    <meta name="theme-color" content="#b20d04">
+    <link rel="icon" href="./img/Salsa-Sikiri-Sin-Fondo.png">
+
+    <meta property="og:title" content="Contacto | Salsa Sikiri">
+    <meta property="og:description" content="Escríbenos por WhatsApp, correo o Instagram.">
+    <meta property="og:image" content="https://www.salsasikiri.com/img/Breakfast_with_sikiri.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;0,9..144,900;1,9..144,400&family=Nunito+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="css/estilos.css">
     <script src="js/script.js" defer></script>
 </head>
 <body>
-    <div id="header-placeholder"></div>
+    <div id="site-header"></div>
 
-    <script>
-      fetch("header.html")
-        .then(response => response.text())
-        .then(data => {
-          document.getElementById("header-placeholder").innerHTML = data;
-        });
-    </script> 
+    <!-- ============ PAGE HERO ============ -->
+    <section class="page-hero">
+        <div class="container">
+            <span class="eyebrow" style="color:#ffd9a0;">Hablemos</span>
+            <h1>Contáctanos</h1>
+            <p>¿Quieres pedir, vender Salsa Sikiri o tienes dudas? Estamos a un mensaje de distancia.</p>
+        </div>
+    </section>
 
-<main class="section contacto">
-    <h2>Contáctanos</h2>
-    <p>¿Tienes dudas, comentarios o quieres vender Salsa Sikiri?</p>
-    <p>Mándanos un mensaje por WhatsApp</p>
+    <!-- ============ CONTACTO ============ -->
+    <section class="section section--cream">
+        <div class="container">
+            <div class="contact-grid">
 
-    <form class="formulario-contacto"  onsubmit="enviarPorWhatsApp(event)">
-      <button type="submit" class="btn-sikiri">Enviar por mensaje por WhatsApp</button>
-      <p>*Al dar click en enviar se abrirá WhatsApp con tu mensaje</p>
-    </form>
+                <!-- Columna izquierda: vías directas -->
+                <div class="contact-card" data-aos="fade-right">
+                    <h3>La forma más rápida</h3>
+                    <p>Escríbenos por WhatsApp y te respondemos lo antes posible. Ideal para pedidos y dudas express.</p>
+                    <a href="https://wa.me/5215510112861?text=¡Hola%20Salsa%20Sikiri!%20Quiero%20más%20información." target="_blank" rel="noopener" class="btn btn-wa">Abrir WhatsApp</a>
 
-      <p>O si prefieres, mándanos un correo.</p>
+                    <ul class="contact-list">
+                        <li><span class="ic">📱</span> <a href="https://wa.me/5215510112861" target="_blank" rel="noopener">WhatsApp directo</a></li>
+                        <li><span class="ic">✉️</span> <a href="mailto:salsa.sikiri@gmail.com">salsa.sikiri@gmail.com</a></li>
+                        <li><span class="ic">📷</span> <a href="https://www.instagram.com/salsa_sikiri/" target="_blank" rel="noopener">@salsa_sikiri</a></li>
+                        <li><span class="ic">📍</span> <a href="puntos-venta.html">Puntos de venta</a></li>
+                    </ul>
+                </div>
 
-      <form class="formulario-contacto" action="https://formsubmit.co/salsa.sikiri@gmail.com" method="POST">
-        <label for="nombre">Nombre:</label>
-        <input type="text" id="nombre" name="nombre" required>
-  
-        <label for="correo">Correo electrónico:</label>
-        <input type="email" id="correo" name="correo" required>
-  
-        <label for="mensaje">Mensaje:</label>
-        <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
-  
-        <button type="submit" class="btn-sikiri">Enviar correo</button>
-      </form>      
+                <!-- Columna derecha: formulario correo -->
+                <div class="contact-card" data-aos="fade-left">
+                    <h3>O mándanos un correo</h3>
+                    <p>Cuéntanos qué necesitas y te contactamos.</p>
+                    <form class="formulario-contacto" action="https://formsubmit.co/salsa.sikiri@gmail.com" method="POST">
+                        <input type="hidden" name="_subject" value="Nuevo mensaje desde salsasikiri.com">
+                        <input type="hidden" name="_template" value="table">
+                        <label for="nombre">Nombre</label>
+                        <input type="text" id="nombre" name="nombre" required>
 
-  </main>
+                        <label for="correo">Correo electrónico</label>
+                        <input type="email" id="correo" name="correo" required>
 
-    <footer class="footer">
-        <p>&copy; 2025 Salsa Sikiri | Sabor Artesanal</p>
-    </footer>
+                        <label for="mensaje">Mensaje</label>
+                        <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+
+                        <button type="submit" class="btn btn-red">Enviar correo</button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <div id="site-footer"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
 </body>
 </html>

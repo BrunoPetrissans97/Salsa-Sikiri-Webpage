@@ -1,93 +1,281 @@
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inicio | Salsa Sikiri</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <title>Salsa Sikiri | Salsa Macha Artesanal Mexicana</title>
+    <meta name="description" content="Salsa Sikiri: salsa macha artesanal mexicana con más de 30 años de tradición. Hecha a mano, sin conservadores, en 5 sabores únicos. Pídela por WhatsApp.">
+    <meta name="theme-color" content="#b20d04">
+    <link rel="icon" href="./img/Salsa-Sikiri-Sin-Fondo.png">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Salsa Sikiri | Salsa Macha Artesanal Mexicana">
+    <meta property="og:description" content="Más de 30 años perfeccionando una salsa macha artesanal. Hecha a mano y sin conservadores.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.salsasikiri.com">
+    <meta property="og:image" content="https://www.salsasikiri.com/img/Breakfast_with_sikiri.png">
+
+    <!-- Tipografía -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;0,9..144,900;1,9..144,400&family=Nunito+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
     <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="css/estilos.css">
     <script src="js/script.js" defer></script>
 </head>
 <body>
-    <div id="header-placeholder"></div>
-    <script>
-      fetch("header.html")
-        .then(response => response.text())
-        .then(data => {
-          document.getElementById("header-placeholder").innerHTML = data;
-        });
-    </script>    
+    <div id="site-header"></div>
 
+    <!-- ============ HERO ============ -->
     <header class="hero">
-        <div class="hero-content">
-            <h1>Más que una salsa, es una herencia con sabor</h1>
-            <h3 data-aos="fade-up" data-aos-delay="200">Más de 30 años perfeccionando el sabor de una salsa macha artesanal que cruza fronteras.</h3>
-            <a href="./productos.html" class="btn-sikiri">DESCUBRE NUESTROS SABORES</a>
-        </div>
-        <div class="hero-image">
-            <img src="./img/Breakfast_with_sikiri.png" alt="Frasco de Salsa Sikiri">
+        <div class="container">
+            <div class="hero-content" data-aos="fade-right">
+                <span class="eyebrow">🌶️ Salsa macha artesanal · desde hace 30+ años</span>
+                <h1>Más que una salsa,<br>es una herencia<br>con sabor</h1>
+                <p class="lead">Una receta familiar nacida en una cocina del norte de México y perfeccionada por más de tres décadas. Hecha a mano, sin conservadores y con alma.</p>
+                <div class="hero-cta">
+                    <a href="productos.html" class="btn btn-red">Descubre nuestros sabores</a>
+                    <a href="https://wa.me/5215510112861?text=¡Hola%20Salsa%20Sikiri!%20Quiero%20pedir%20salsa." target="_blank" rel="noopener" class="btn btn-wa">
+                        Pídela por WhatsApp
+                    </a>
+                </div>
+            </div>
+            <div class="hero-image" data-aos="fade-left">
+                <span class="hero-badge">Hecha a mano 🤲</span>
+                <img src="./img/Breakfast_with_sikiri.png" alt="Frascos de Salsa Sikiri en la mesa">
+            </div>
         </div>
     </header>
 
-    <p>Aqui quiero que haya reseñas de gente que recomienda la salsa</p>
-
-    <section class="reviews-section">
+    <!-- ============ TRUST BAR ============ -->
+    <div class="trust-bar">
         <div class="container">
-          <h2 class="section-title" data-aos="fade-up">Lo que dicen nuestros clientes</h2>
-    
-          <div class="swiper">
-            <div class="swiper-wrapper">
-    
-              <!-- Review 1 -->
-              <div class="swiper-slide">
-                <div class="review-card" data-aos="fade-right">
-                  <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Carlos M." class="avatar">
-                  <p class="name">Carlos M.</p>
-                  <p class="location">Ciudad de México</p>
-                  <p class="text">"La Salsa Sikiri Original le dio un toque especial a mis tacos. ¡Mis amigos quedaron encantados!"</p>
-                </div>
-              </div>
-    
-              <!-- Review 2 -->
-              <div class="swiper-slide">
-                <div class="review-card" data-aos="fade-up">
-                  <img src="https://randomuser.me/api/portraits/women/45.jpg" alt="Lucía R." class="avatar">
-                  <p class="name">Lucía R.</p>
-                  <p class="location">Guadalajara</p>
-                  <p class="text">"Uso la versión de arándano en mis ensaladas y le da un sabor único. ¡Totalmente recomendada!"</p>
-                </div>
-              </div>
-    
-              <!-- Review 3 -->
-              <div class="swiper-slide">
-                <div class="review-card" data-aos="fade-left">
-                  <img src="https://randomuser.me/api/portraits/men/65.jpg" alt="Andrés L." class="avatar">
-                  <p class="name">Andrés L.</p>
-                  <p class="location">Monterrey</p>
-                  <p class="text">"Desde que probé la Salsa Sikiri de cacahuate, no puede faltar en mis platillos. ¡Deliciosa!"</p>
-                </div>
-              </div>
-    
-            </div>
-          </div>
+            <span>🤲 100% artesanal</span>
+            <span>🌿 Sin conservadores</span>
+            <span>🏡 Hecha en la casa donde nació</span>
+            <span>™️ Marca registrada</span>
         </div>
-      </section>
+    </div>
 
+    <!-- ============ FEATURES ============ -->
+    <section class="section section--cream">
+        <div class="container">
+            <div class="text-center">
+                <span class="eyebrow">Por qué Sikiri</span>
+                <h2 class="section-title">Sabor con historia, no de fábrica</h2>
+                <div class="divider-chili">🌶️ ⋯ 🌶️ ⋯ 🌶️</div>
+            </div>
+            <div class="features">
+                <div class="feature-card" data-aos="fade-up">
+                    <div class="feature-icon">🌶️</div>
+                    <h3>Receta de 30+ años</h3>
+                    <p>Tres décadas afinando la mezcla justa de chiles: ni demasiado brava, ni demasiado suave.</p>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="feature-icon">🤲</div>
+                    <h3>100% artesanal</h3>
+                    <p>Cada frasco se hace a mano, en pequeños lotes, con ingredientes naturales seleccionados.</p>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="feature-icon">🌿</div>
+                    <h3>Sin conservadores</h3>
+                    <p>Solo chiles, aceite e ingredientes reales. Nada de aditivos ni procesos industriales.</p>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="feature-icon">✈️</div>
+                    <h3>Cruza fronteras</h3>
+                    <p>Nuestra presentación de 70 g está aprobada para equipaje de mano. El sabor de México, contigo.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <footer class="footer">
-        <p>&copy; 2025 Salsa Sikiri | Sabor Artesanal</p>
-    </footer>
+    <!-- ============ SABORES DESTACADOS ============ -->
+    <section class="section">
+        <div class="container">
+            <div class="text-center">
+                <span class="eyebrow">Nuestro portafolio</span>
+                <h2 class="section-title">5 sabores, una sola tradición</h2>
+                <p class="section-intro">Desde la receta madre hasta nuestra línea gourmet. Hay una Sikiri para cada platillo.</p>
+            </div>
+            <div class="flavor-grid">
+                <div class="flavor-card" data-aos="fade-up">
+                    <div class="flavor-media"><img src="./img/Salsa_260_Original_Individual.png" alt="Salsa Sikiri Original"></div>
+                    <div class="flavor-body">
+                        <span class="flavor-tag">La receta madre</span>
+                        <h3>Original</h3>
+                        <div class="spice" aria-label="Nivel de picante: 3 de 3" title="Picante 3 de 3">
+                            <span class="flame on">🔥</span><span class="flame on">🔥</span><span class="flame on">🔥</span>
+                            <span class="spice-label">Intenso</span>
+                        </div>
+                        <p>Chile de árbol y guajillo en perfecto equilibrio. Intensa, profunda y deliciosa.</p>
+                        <div class="flavor-pairing"><strong>Marida con:</strong> tacos, carnes y guisados</div>
+                        <a href="https://wa.me/5215510112861?text=¡Hola!%20Me%20interesa%20la%20Salsa%20Sikiri%20Original." target="_blank" rel="noopener" class="btn btn-outline">Pedir</a>
+                    </div>
+                </div>
+                <div class="flavor-card" data-aos="fade-up" data-aos-delay="80">
+                    <div class="flavor-media"><img src="./img/Salsa_260_Cacahuate_Individual.png" alt="Salsa Sikiri Cacahuate"></div>
+                    <div class="flavor-body">
+                        <span class="flavor-tag">Crujiente</span>
+                        <h3>Cacahuate</h3>
+                        <div class="spice" aria-label="Nivel de picante: 2 de 3" title="Picante 2 de 3">
+                            <span class="flame on">🔥</span><span class="flame on">🔥</span><span class="flame">🔥</span>
+                            <span class="spice-label">Medio</span>
+                        </div>
+                        <p>Nuestra macha con trozos crujientes de cacahuate. Un clásico que engancha.</p>
+                        <div class="flavor-pairing"><strong>Marida con:</strong> carnes, tacos y botanas</div>
+                        <a href="https://wa.me/5215510112861?text=¡Hola!%20Me%20interesa%20la%20Salsa%20Sikiri%20de%20Cacahuate." target="_blank" rel="noopener" class="btn btn-outline">Pedir</a>
+                    </div>
+                </div>
+                <div class="flavor-card" data-aos="fade-up" data-aos-delay="160">
+                    <div class="flavor-media"><img src="./img/Salsa_260_Arandano_Individual.png" alt="Salsa Sikiri Arándano"></div>
+                    <div class="flavor-body">
+                        <span class="flavor-tag">Dulce-picante</span>
+                        <h3>Arándano</h3>
+                        <div class="spice" aria-label="Nivel de picante: 2 de 3" title="Picante 2 de 3">
+                            <span class="flame on">🔥</span><span class="flame on">🔥</span><span class="flame">🔥</span>
+                            <span class="spice-label">Medio</span>
+                        </div>
+                        <p>El balance perfecto entre lo dulce y lo picante. Sorprende en cada bocado.</p>
+                        <div class="flavor-pairing"><strong>Marida con:</strong> quesos, carnes frías y cocina asiática</div>
+                        <a href="https://wa.me/5215510112861?text=¡Hola!%20Me%20interesa%20la%20Salsa%20Sikiri%20de%20Arándano." target="_blank" rel="noopener" class="btn btn-outline">Pedir</a>
+                    </div>
+                </div>
+                <div class="flavor-card" data-aos="fade-up">
+                    <div class="flavor-media"><img src="./img/Salsa_260_Morita_Individual.png" alt="Salsa Sikiri Morita Cascabel"></div>
+                    <div class="flavor-body">
+                        <span class="flavor-tag">Ahumada</span>
+                        <h3>Morita Cascabel</h3>
+                        <div class="spice" aria-label="Nivel de picante: 3 de 3" title="Picante 3 de 3">
+                            <span class="flame on">🔥</span><span class="flame on">🔥</span><span class="flame on">🔥</span>
+                            <span class="spice-label">Intenso</span>
+                        </div>
+                        <p>Chile morita y cascabel para un sabor ahumado y achipotlado irresistible.</p>
+                        <div class="flavor-pairing"><strong>Marida con:</strong> picadillo, mariscos y antojitos</div>
+                        <a href="https://wa.me/5215510112861?text=¡Hola!%20Me%20interesa%20la%20Salsa%20Sikiri%20Morita%20Cascabel." target="_blank" rel="noopener" class="btn btn-outline">Pedir</a>
+                    </div>
+                </div>
+                <div class="flavor-card" data-aos="fade-up" data-aos-delay="80">
+                    <!-- TODO: falta foto de Frutos Secos. Drive: Marketing/Photos/Photoshoot/Final photos -->
+                    <div class="flavor-media">
+                        <div class="img-placeholder">
+                            <span class="ph-emoji">🥜</span>
+                            <span>Próximamente</span>
+                        </div>
+                    </div>
+                    <div class="flavor-body">
+                        <span class="flavor-tag gourmet">Línea gourmet ✨</span>
+                        <h3>Frutos Secos</h3>
+                        <!-- Frutos Secos no figura en el diseño "Sabores" de Canva; nivel asumido suave. Ajustar si hace falta. -->
+                        <div class="spice" aria-label="Nivel de picante: 1 de 3" title="Picante 1 de 3">
+                            <span class="flame on">🔥</span><span class="flame">🔥</span><span class="flame">🔥</span>
+                            <span class="spice-label">Suave</span>
+                        </div>
+                        <p>Mezcla de frutos secos y aceite de oliva con un toque macha. Nuestra joya gourmet.</p>
+                        <div class="flavor-pairing"><strong>Marida con:</strong> ensaladas, pizzas y quesos</div>
+                        <a href="https://wa.me/5215510112861?text=¡Hola!%20Me%20interesa%20la%20Salsa%20Sikiri%20de%20Frutos%20Secos." target="_blank" rel="noopener" class="btn btn-outline">Pedir</a>
+                    </div>
+                </div>
+                <div class="flavor-card" data-aos="fade-up" data-aos-delay="160" style="justify-content:center;align-items:center;text-align:center;padding:2rem;">
+                    <div class="flavor-body" style="justify-content:center;">
+                        <div class="feature-icon">🎁</div>
+                        <h3>¿No sabes cuál elegir?</h3>
+                        <p>Prueba nuestro Kit Degustación 4×70 g y descubre tu favorita.</p>
+                        <a href="productos.html" class="btn btn-red" style="align-self:center;">Ver presentaciones</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ STORY ============ -->
+    <section class="section section--beige">
+        <div class="container">
+            <div class="story">
+                <div class="story-text" data-aos="fade-right">
+                    <span class="eyebrow">Sikiri significa "rojo"</span>
+                    <h2>Un homenaje a nuestras raíces</h2>
+                    <p><em>Sikiri</em> significa "rojo" en lengua <strong>Yaqui</strong>, comunidad originaria de Sonora. Es nuestro homenaje al norte de México y al rojo intenso del aceite que encierra toda la esencia de los chiles.</p>
+                    <p class="pull-quote">"Salsa Sikiri no nació en una fábrica, sino en una cocina. Y cada frasco cuenta una historia."</p>
+                    <a href="historia.html" class="btn btn-outline">Conoce nuestra historia</a>
+                </div>
+                <div class="story-media" data-aos="fade-left">
+                    <img src="./img/Breakfast_with_sikiri.png" alt="Salsa Sikiri lista para compartir">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ RESEÑAS ============ -->
+    <!-- TODO: reemplazar por reseñas reales de clientes. Estas son ejemplos. -->
+    <section class="section reviews-section">
+        <div class="container">
+            <div class="text-center">
+                <span class="eyebrow">Testimonios</span>
+                <h2 class="section-title">Lo que dicen quienes la prueban</h2>
+                <p class="section-intro">El sabor que conquista mesas en todo México.</p>
+            </div>
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="review-card">
+                            <div class="avatar-initials">CM</div>
+                            <div class="review-stars">★★★★★</div>
+                            <p class="text">"La Original le dio un toque especial a mis tacos. ¡Mis amigos quedaron encantados!"</p>
+                            <p class="name">Carlos M.</p>
+                            <p class="location">Ciudad de México</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="review-card">
+                            <div class="avatar-initials">LR</div>
+                            <div class="review-stars">★★★★★</div>
+                            <p class="text">"Uso la de arándano en mis ensaladas y le da un sabor único. ¡Totalmente recomendada!"</p>
+                            <p class="name">Lucía R.</p>
+                            <p class="location">Guadalajara</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="review-card">
+                            <div class="avatar-initials">AL</div>
+                            <div class="review-stars">★★★★★</div>
+                            <p class="text">"Desde que probé la de cacahuate, no puede faltar en mis platillos. ¡Deliciosa!"</p>
+                            <p class="name">Andrés L.</p>
+                            <p class="location">Monterrey</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="review-card">
+                            <div class="avatar-initials">MP</div>
+                            <div class="review-stars">★★★★★</div>
+                            <p class="text">"La de Frutos Secos es otro nivel. La pongo hasta en la pizza."</p>
+                            <p class="name">María P.</p>
+                            <p class="location">Querétaro</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ CTA FINAL ============ -->
+    <section class="section section--red cta-band">
+        <div class="container">
+            <h2>¿List@ para probar la diferencia artesanal?</h2>
+            <p>Escríbenos por WhatsApp y arma tu pedido, o encuentra dónde comprar Sikiri cerca de ti.</p>
+            <div class="hero-cta">
+                <a href="https://wa.me/5215510112861?text=¡Hola%20Salsa%20Sikiri!%20Quiero%20hacer%20un%20pedido." target="_blank" rel="noopener" class="btn btn-wa">Pedir por WhatsApp</a>
+                <a href="puntos-venta.html" class="btn btn-light">Ver puntos de venta</a>
+            </div>
+        </div>
+    </section>
+
+    <div id="site-footer"></div>
 
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-        AOS.init();
-    </script>
-
 </body>
 </html>

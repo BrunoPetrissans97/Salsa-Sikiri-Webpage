@@ -1,31 +1,93 @@
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Puntos de Venta | Salsa Sikiri</title>
+    <meta name="description" content="Encuentra Salsa Sikiri cerca de ti: supermercados, queserías, tortillerías y pueblos mágicos. Consulta el mapa de puntos de venta.">
+    <meta name="theme-color" content="#b20d04">
+    <link rel="icon" href="./img/Salsa-Sikiri-Sin-Fondo.png">
+
+    <meta property="og:title" content="Puntos de Venta | Salsa Sikiri">
+    <meta property="og:description" content="Dónde comprar Salsa Sikiri cerca de ti.">
+    <meta property="og:image" content="https://www.salsasikiri.com/img/Breakfast_with_sikiri.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;0,9..144,900;1,9..144,400&family=Nunito+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="css/estilos.css">
     <script src="js/script.js" defer></script>
 </head>
 <body>
-    <div id="header-placeholder"></div>
-    <script>
-      fetch("header.html")
-        .then(response => response.text())
-        .then(data => {
-          document.getElementById("header-placeholder").innerHTML = data;
-        });
-    </script> 
-    <main class="section">
-        <h2>Puntos de Venta</h2>
-        <p>Aquí te presentamos nuestros puntos de venta 📍</p>
-        <iframe src="https://www.google.com/maps/d/embed?mid=1arVvN3vgVxasYUlAdM2GjGdXIvugZQ4&ehbc=2E312F" width="640" height="480"></iframe>
-    
-    </main>
-    
-    <footer class="footer">
-        <p>&copy; 2025 Salsa Sikiri | Sabor Artesanal</p>
-    </footer>
+    <div id="site-header"></div>
+
+    <!-- ============ PAGE HERO ============ -->
+    <section class="page-hero">
+        <div class="container">
+            <span class="eyebrow" style="color:#ffd9a0;">¿Dónde comprar?</span>
+            <h1>Puntos de venta 📍</h1>
+            <p>Encuentra Salsa Sikiri en estos puntos. ¿No hay uno cerca? Pídela directo por WhatsApp y te decimos cómo.</p>
+        </div>
+    </section>
+
+    <!-- ============ CANALES ============ -->
+    <section class="section section--cream">
+        <div class="container">
+            <div class="text-center">
+                <span class="eyebrow">Nos encuentras en</span>
+                <h2 class="section-title">Llegamos a donde está el sabor</h2>
+                <div class="divider-chili">🌶️ ⋯ 🌶️ ⋯ 🌶️</div>
+            </div>
+            <div class="channel-grid">
+                <div class="channel-card" data-aos="fade-up">
+                    <div class="ic">🛒</div>
+                    <h3>Supermercados</h3>
+                    <p>Tiendas y supermercados regionales.</p>
+                </div>
+                <div class="channel-card" data-aos="fade-up" data-aos-delay="80">
+                    <div class="ic">🧀</div>
+                    <h3>Queserías</h3>
+                    <p>El acompañante ideal para los quesos.</p>
+                </div>
+                <div class="channel-card" data-aos="fade-up" data-aos-delay="160">
+                    <div class="ic">🌮</div>
+                    <h3>Tortillerías</h3>
+                    <p>Para que tus tacos nunca estén solos.</p>
+                </div>
+                <div class="channel-card" data-aos="fade-up" data-aos-delay="240">
+                    <div class="ic">🏞️</div>
+                    <h3>Pueblos mágicos</h3>
+                    <p>El souvenir con sabor que viaja contigo.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ MAPA ============ -->
+    <section class="section">
+        <div class="container">
+            <div class="text-center">
+                <span class="eyebrow">Mapa interactivo</span>
+                <h2 class="section-title">Encuéntranos en el mapa</h2>
+                <p class="section-intro">Acerca y explora los puntos donde puedes conseguir tu Sikiri.</p>
+            </div>
+            <iframe class="map-frame" src="https://www.google.com/maps/d/embed?mid=1arVvN3vgVxasYUlAdM2GjGdXIvugZQ4&ehbc=2E312F" title="Mapa de puntos de venta de Salsa Sikiri" loading="lazy"></iframe>
+        </div>
+    </section>
+
+    <!-- ============ CTA ============ -->
+    <section class="section section--beige cta-band">
+        <div class="container">
+            <h2>¿No encuentras un punto cerca?</h2>
+            <p>No te quedes con las ganas. Hacemos envíos y entregas directas. Escríbenos y armamos tu pedido.</p>
+            <a href="https://wa.me/5215510112861?text=¡Hola%20Salsa%20Sikiri!%20No%20veo%20un%20punto%20de%20venta%20cerca,%20¿cómo%20puedo%20pedir?" target="_blank" rel="noopener" class="btn btn-wa">Pedir por WhatsApp</a>
+        </div>
+    </section>
+
+    <div id="site-footer"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
 </body>
 </html>
