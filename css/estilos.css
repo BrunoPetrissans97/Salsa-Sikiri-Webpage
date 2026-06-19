@@ -340,18 +340,6 @@ img { max-width: 100%; display: block; }
 .timeline-item .year { color: var(--dorado); font-weight: 800; font-size: .9rem; }
 
 /* ============================================================
-   TABLA DE PRECIOS / PRESENTACIONES
-   ============================================================ */
-.price-table-wrap { overflow-x: auto; border-radius: var(--radio); box-shadow: var(--sombra-suave); }
-.price-table { width: 100%; border-collapse: collapse; background: var(--crema); min-width: 460px; }
-.price-table th, .price-table td { padding: 1rem 1.2rem; text-align: left; border-bottom: 1px solid var(--beige-oscuro); }
-.price-table thead th { background: var(--rojo-sikiri); color: #fff; font-family: var(--fuente-texto); font-weight: 800; }
-.price-table tbody tr:last-child td { border-bottom: none; }
-.price-table tbody tr:hover { background: var(--beige-claro); }
-.price-table .precio { font-weight: 800; color: var(--verde-olivo); }
-.price-note { font-size: .9rem; color: var(--gris-tenue); margin-top: .9rem; text-align: center; }
-
-/* ============================================================
    RECETAS
    ============================================================ */
 .recipe-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem; }
