@@ -4,7 +4,7 @@
 
 // --- Datos de contacto centralizados ---
 const SIKIRI = {
-  whatsapp: "525510112861",
+  whatsapp: "525548974644",
   email: "salsa.sikiri@gmail.com",
   instagram: "https://www.instagram.com/salsa_sikiri/",
 };
